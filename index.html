@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JokenPô</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>JokenPô</h1>
+            <img onclick="reset()" src="./assets/reset.png" alt="button-reset" class="reset"> 
+            
+            <div class="button">
+                <button id="pedra" onclick="playHuman('rock')">&#x1F44A;</button>
+                <button id="papel" onclick="playHuman('paper')">&#x1F590;</button>
+                <button id="tesoura" onclick="playHuman('scissors')">&#x270C;</button>
+            </div>
+
+            <p class="resultado"></p>
+            <p class="your-score">Sua Pontuação: <span id="human-score">0</span></p>
+            <p class="machine-score">Pontuação Alexa: <span id="machine-score">0</span></p>
+
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<!-- Esse script serve para dar o efeito de confete -->
+
+</html>
